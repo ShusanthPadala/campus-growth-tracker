@@ -219,3 +219,7 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text
 .btn.danger-link{background:transparent;color:var(--text);border:1px solid var(--field-border);font-weight:600}
 .userbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px;font-size:.88rem;color:var(--muted)}
 
+
+/* Ambassador name form: let the text box take the available width (it was squeezed to a sliver) */
+form.linkrow{flex-wrap:wrap;gap:10px}
+form.linkrow input[type=text]{flex:1 1 240px;min-width:0;width:auto;min-height:48px;font-size:1rem}

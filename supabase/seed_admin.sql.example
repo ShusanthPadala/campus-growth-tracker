@@ -1,0 +1,5 @@
+-- 1) Supabase dashboard → Authentication → Users → "Add user" → create the admin with email + password.
+-- 2) Then run this in the SQL editor, replacing the email, to authorise that user as an admin:
+insert into public.admin_users (user_id)
+select id from auth.users where email = 'you@example.com'
+on conflict do nothing;
